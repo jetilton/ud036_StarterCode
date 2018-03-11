@@ -130,6 +130,17 @@ movie_tile_content = '''
 
 
 def create_movie_tiles_content(movies):
+    """
+    This is a helper function for the open_movies_page function.  
+    
+    Params:
+        
+        movies(list): list of object type Movie
+        
+    Returns:
+        
+        content(str): returns an html string for the fresh tomatoes website
+    """
     # The HTML content for this section of the page
     content = ''
     for movie in movies:
@@ -151,6 +162,19 @@ def create_movie_tiles_content(movies):
 
 
 def open_movies_page(movies):
+    
+    """
+    This function launches a webbrowser to the fresh tomatoes website
+    on a local machine.
+    
+    Params: 
+        movies(list): list of object type Movie
+    
+    Returns:
+        
+        
+        
+    """
     # Create or overwrite the output file
     output_file = open('fresh_tomatoes.html', 'w')
 
